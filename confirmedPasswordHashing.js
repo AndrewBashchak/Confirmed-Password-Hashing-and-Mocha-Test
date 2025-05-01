@@ -1,5 +1,5 @@
-const argon2 = require('argon2');
-const prompt = require('prompt');
+import argon2 from 'argon2';
+import prompt from 'prompt';
 
 prompt.start();
 
@@ -25,3 +25,5 @@ async function passwordVerification(result) {
         console.log('Password not confirmed');
     }
 }
+
+export { passwordVerification };
